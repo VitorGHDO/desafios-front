@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.cabecalho {
+    background: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+}
+
+.cabecalho-titulo{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    align-items: center;
+}
+
+.cabecalho-blog{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+a {
+    color: white;
+}
+
+.cabecalho-texto {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: white;
+    opacity: 0.5;
+    padding-left: 10px;
+}
+
+.cabecalho-cima {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.cabecalho-baixo {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.cabecalho-barra {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    width: 55.2%;
+    height: 40px;
+}
+
+.cabecalho-imagem {
+    margin-left: 10px;
+    height: 24px;
+    width: 24px;
+}
+
