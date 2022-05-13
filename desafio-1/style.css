@@ -7,33 +7,49 @@
     text-decoration: none;
 }
 
+:root {
+    --corCabecalho: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+    --corBarra: rgba(255, 255, 255, 0.2);
+
+    --corMain: background-color: #f3f5f7;
+    --corSecundaria: white;
+    --corSombra: 0px 0px 10px rgba(19, 19, 31, 0.05);
+
+    --corTexto: white;
+    --corTitulo: #1A202C;
+    --corTextoSecundario: #717171;
+
+    --fontPrimaria: 'Lexend Deca', sans-serif;
+    --fontSecundaria: 'Inter', sans-serif;
+}
+
 .cabecalho {
-    background: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+    background: var(--corCabecalho);
 }
 
 .cabecalho-titulo{
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: var(--fontPrimaria);
     font-weight: 400;
     font-size: 24px;
-    color: white;
+    color: var(--corTexto);
     align-items: center;
 }
 
 .cabecalho-blog{
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: var(--fontPrimaria);
     font-weight: 400;
     font-size: 24px;
 }
 
 a {
-    color: white;
+    color: var(--corTexto);
 }
 
 .cabecalho-texto {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--fontSecundaria);
     font-weight: 500;
     font-size: 18px;
-    color: white;
+    color: var(--corTexto);
     opacity: 0.5;
     padding-left: 10px;
 }
@@ -54,7 +70,7 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--corBarra);
     border-radius: 5px;
     width: 55.2%;
     height: 60px;
@@ -72,7 +88,7 @@ a {
     justify-content: space-around;
     align-items: center;
     padding-top: 80px;
-    background-color: #f3f5f7;
+    background-color: var(--corMain);
 }
 
 .box {
@@ -80,28 +96,28 @@ a {
     margin-top: 50px;
     margin-bottom: 50px;
     padding: 20px;
-    background-color: white;
-    box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+    background-color: var(--corSecundaria);
+    box-shadow: var(--corSombra);
     border-radius: 5px;
 }
 
 .box-data{
-    font-family: 'Lexend Deca', sans-serif;
-    color: #717171;
+    font-family: var(--fontPrimaria);
+    color: var(--corTextoSecundario);
     font-weight: 400;
     font-size: 16px;   
 }
 
 .box-titulo{
-    font-family: 'Lexend Deca', sans-serif;
-    color: #1A202C;
+    font-family: var(--fontPrimaria);
+    color: var(--corTitulo);
     font-weight: 400;
     font-size: 26px;
 }
 
 .box-descricao{
-    font-family: 'Lexend Deca', sans-serif;
-    color: #717171;
+    font-family: var(--fontPrimaria);
+    color: var(--corTextoSecundario);
     font-weight: 400;
     font-size: 18px;
 }
