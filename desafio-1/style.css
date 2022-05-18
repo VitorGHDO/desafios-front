@@ -11,7 +11,7 @@
     --corCabecalho: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
     --corBarra: rgba(255, 255, 255, 0.2);
 
-    --corMain: background-color: #f3f5f7;
+    --corMain: color: #f3f5f7;
     --corSecundaria: white;
     --corSombra: 0px 0px 10px rgba(19, 19, 31, 0.05);
 
