@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    --font: 'Montserrat', sans-serif;
+
+    --mainColorFont: #F9F9F9;
+    --titleColorFont: #181818;
+    --descriptionColorFont: #474747;
+
+    --mainColor: #F9F9F9;
+    --secondColor: #181818; 
+    --boxColor: #EBE9EA;
+}
+
+.cabecalho{
+    font-family: var(--font);
+    background-color: var(--secondColor);
+    color: var(--mainColorFont);
+
+    font-weight: 500;
+    font-size: 18px;
+
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px 15px 0px;
+}
