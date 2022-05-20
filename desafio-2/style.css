@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 *{
     margin: 0;
@@ -21,13 +21,60 @@
 
 .cabecalho{
     font-family: var(--font);
+    font-weight: 400;
+    font-size: 18px;
     background-color: var(--secondColor);
     color: var(--mainColorFont);
-
-    font-weight: 500;
-    font-size: 18px;
 
     display: flex;
     justify-content: center;
     padding: 15px 0px 15px 0px;
+}
+
+.titulo{
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 24px;
+    background-color: var(--boxColor);
+    color: var(--titleColorFont);
+
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+}
+
+
+.mainBox{
+    height: 500px;
+    background-image: url(img/imagemFundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    filter: brightness(70%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-left: 100px;
+}
+
+.texto{
+    font-family: var(--font);
+    color: var(--mainColorFont);
+
+    width: 450px;
+    overflow-wrap: break-word;
+}
+
+.subTitulo{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.descricao{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    padding-top: 25px;
 }
