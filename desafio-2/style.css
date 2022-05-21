@@ -45,7 +45,7 @@
 
 .mainBox{
     height: 500px;
-    background-image: linear-gradient( rgba(1,1,1, 0.325),rgba(0,0,0,0.564)),url(img/imagemFundo.jpeg);
+    background-image: linear-gradient( rgba(1,1,1, 0.400),rgba(0,0,0,0.600)),url(img/imagemFundo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;
@@ -77,6 +77,27 @@
     padding-top: 25px;
 }
 
+.textBox{
+    font-family: var(--font);
+
+    padding: 50px 15px 0px 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.subTitulo-textBox{
+    color: var(--titleColorFont);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.descricao-textBox{
+    color: var(--descriptionColorFont);
+    font-size: 16px;
+    padding-top: 16px;
+}
+
 @media (max-width: 910px) {
     .cabecalho {
         font-size: 16px;
@@ -98,6 +119,15 @@
     .descricao {
         font-size: 16px;
     }
+
+    .subTitulo-textBox{
+        font-size: 29px;
+    }
+
+    .descricao-textBox{
+        font-size: 15px;
+    }
+
 }
 
 @media (max-width: 515px) {
@@ -125,5 +155,13 @@
 
     .descricao {
         font-size: 15px;
+    }
+
+    .subTitulo-textBox{
+        font-size: 26px;
+    }
+
+    .descricao-textBox{
+        font-size: 13px;
     }
 }
