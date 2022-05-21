@@ -43,14 +43,12 @@
     padding: 10px 0px 10px 0px;
 }
 
-
 .mainBox{
     height: 500px;
-    background-image: url(img/imagemFundo.jpeg);
+    background-image: linear-gradient( rgba(1,1,1, 0.325),rgba(0,0,0,0.564)),url(img/imagemFundo.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;
-    filter: brightness(70%);
     
     display: flex;
     flex-direction: column;
@@ -77,4 +75,55 @@
     font-size: 18px;
     line-height: 180%;
     padding-top: 25px;
+}
+
+@media (max-width: 910px) {
+    .cabecalho {
+        font-size: 16px;
+    }
+    
+    .titulo {
+        font-size: 22px;
+    }
+
+    .mainBox {
+        height: 460px;
+        padding-left: 60px;
+    }
+
+    .subTitulo {
+        font-size: 26px;
+    }
+
+    .descricao {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 515px) {
+    /*todas fontes foram diminuidas em 17% (x 0,83)*/
+    .cabecalho {
+        font-size: 15px;
+    }
+    
+    .titulo {
+        font-size: 20px;
+    }
+
+    .mainBox {
+        height: 420px;
+        padding-left: 20px;
+    }
+
+    .texto { /*deixei dessa largura para dividir em 3 linhas*/
+        width: 350px;
+    }
+
+    .subTitulo {
+        font-size: 23px;
+    }
+
+    .descricao {
+        font-size: 15px;
+    }
 }
