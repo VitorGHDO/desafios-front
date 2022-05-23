@@ -60,7 +60,7 @@ a {
     padding: 30px;
 }
 
-.cabecalho-baixo {
+.cabecalho-baixo{
     display: flex;
     justify-content: center;
     padding: 30px;
@@ -77,9 +77,28 @@ a {
 }
 
 .cabecalho-imagem {
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
     height: 24px;
     width: 24px;
+} 
+
+.cabecalho-barra-pesquisa {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+
+    color: var(--corTexto);
+    font-family: var(--fontSecundaria);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: var(--corTexto);
+    opacity: 0.5;
+    padding-left: 1
 }
 
 .boxes {
@@ -139,15 +158,12 @@ a {
     .cabecalho-cima {
         justify-content: space-between;
     }
-    
+
     .cabecalho-barra {
         width: 100%;
     }
-}   
 
-@media (max-width: 690px) {
     .box {
         width: 87%;
-    }
-    
-}
+    } 
+}   
