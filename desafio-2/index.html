@@ -18,7 +18,8 @@
         <div class="mainBox">
             <div class="texto">
                 <h2 class="subTitulo">A melhor loja de Jordan</h2>
-                <p class="descricao">O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael Jordan.</p>
+                <p><span class="descricao"></span></p>
+                <!-- <p class="descricao"></p> -->
             </div>
         </div>
 
@@ -40,6 +41,25 @@
                 <img class="produto" src="img/8.png" alt="Tênis Jordan - Preto/Branco">
         </div>
     </main>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'left',
+            distance: '25px',
+            duration: 1500,
+            reset: false
+        });
+
+        ScrollReveal().reveal('.produto', { delay: 300 });
+    </script> -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('.descricao', {
+            strings: ["O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael Jordan."],
+            typeSpeed: 30
+        });
+    </script>
 </body>
 
 <footer class="rodape">
