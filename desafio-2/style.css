@@ -105,13 +105,21 @@ a{
     padding-top: 16px;
 }
 
+.container-container{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 67%;
+}
+  
 .catalogo{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 
-    padding: 50px 0px 0px 0px;
-    margin: 0px 165px 0px 165px;
+    padding-top: 50px;
 }
 
 .card {
@@ -123,18 +131,22 @@ a{
     justify-content: center;
     align-items: center;
     
-    margin: 0px 15px 30px 0px;
+    margin-bottom: 20px;
+}
+
+.produto {
+    object-fit: contain;
 }
 
 .card img {
-    height: 50%;
-    width: 50%;
+    height: 70%;
+    width: 70%;
     background: none;
     transition: all .6s ease;
 }
 
 .card:hover img {
-    transform: scale(1.4);
+    transform: scale(1.4); 
     transition: 1s all ease;
 }
 
@@ -156,12 +168,6 @@ a{
     color: var(--mainColorFont);
     font-size: 18px;
     font-weight: 500;
-}
-
-@media (max-width: 1600px) {
-    .catalogo{ 
-        margin: 0px 20px 0px 20px;
-    }
 }
 
 @media (max-width: 910px) {
@@ -193,11 +199,7 @@ a{
     .descricao-textBox{
         font-size: 15px;
     }
-
-    .catalogo{ 
-        margin: 0px 20px 0px 20px;
-    }
-
+        
     .direitos{
         font-size: 16px;
     }
