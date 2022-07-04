@@ -16,7 +16,7 @@
         <div class="cabecalho-baixo">
             <div class="cabecalho-barra">
                 <img class="cabecalho-imagem" src="img/Lupa.png" alt="Imagem de uma lupa">
-                <div class="cabecalho-texto">Pesquisar no blog</div>
+                <input type="text" class="cabecalho-barra-pesquisa" placeholder="Pesquisar no blog">
             </div>
         </div>
     </header>
@@ -77,5 +77,19 @@
         </div>
     </main>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        const sr = ScrollReveal({
+            origin: 'top',
+            distance: '25px',
+            duration: 2000,
+            reset: false
+        });
+
+        ScrollReveal().reveal('.box', { delay: 200 });
+        ScrollReveal().reveal('.box-data', { delay: 300 });
+        ScrollReveal().reveal('.box-titulo', { delay: 350 });
+        ScrollReveal().reveal('.box-fim', { delay: 350 });
+    </script>
 </body>
 </html>

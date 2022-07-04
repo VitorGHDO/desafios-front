@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a{
+    color: var(--mainColorFont);
+}
+
+:root{
+    --font: 'Montserrat', sans-serif;
+
+    --mainColorFont: #F9F9F9;
+    --titleColorFont: #181818;
+    --descriptionColorFont: #474747;
+
+    --mainColor: #F9F9F9;
+    --secondColor: #181818; 
+    --boxColor: #EBE9EA;
+    --boxShadow: 0px 0px 10px rgba(19, 19, 31, 0.5);
+    --opacityColor: rgba(1,1,1, 0.400),rgba(0,0,0,0.600);
+}
+
+.cabecalho{
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 18px;
+    background-color: var(--secondColor);
+    color: var(--mainColorFont);
+
+    display: flex;
+    justify-content: center;
+    padding: 15px 0px 15px 0px;
+}
+
+.titulo{
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 24px;
+    background-color: var(--boxColor);
+    color: var(--titleColorFont);
+
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+}
+
+.mainBox{
+    height: 500px;
+    background-image: linear-gradient(var(--opacityColor)),url(img/imagemFundo.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    padding-left: 100px;
+}
+
+.texto{
+    font-family: var(--font);
+    color: var(--mainColorFont);
+
+    width: 500px;
+    overflow-wrap: break-word;
+}
+
+.texto p{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    padding-top: 22px;
+}
+
+.subTitulo{
+    font-weight: 700;
+    font-size: 28px;
+}
+
+
+.textBox{
+    font-family: var(--font);
+
+    padding: 50px 15px 0px 15px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.subTitulo-textBox{
+    color: var(--titleColorFont);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.descricao-textBox{
+    color: var(--descriptionColorFont);
+    font-size: 16px;
+    padding-top: 16px;
+}
+
+.container-container{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 67%;
+}
+  
+.catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    padding-top: 50px;
+}
+
+.card {
+    background-color: var(--boxColor);
+    height: 300px;
+    width: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 20px;
+}
+
+.produto {
+    object-fit: contain;
+}
+
+.card img {
+    height: 70%;
+    width: 70%;
+    background: none;
+    transition: all .6s ease;
+}
+
+.card:hover img {
+    transform: scale(1.4); 
+    transition: 1s all ease;
+}
+
+.card:hover{
+    box-shadow: var(--boxShadow);
+} 
+
+.rodape{
+    background-color: var(--secondColor);
+    height: 40px;
+    margin-top: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.direitos{
+    color: var(--mainColorFont);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media (max-width: 910px) {
+    .cabecalho {
+        font-size: 16px;
+    }
+    
+    .titulo {
+        font-size: 22px;
+    }
+
+    .mainBox {
+        height: 460px;
+        padding-left: 60px;
+    }
+
+    .subTitulo {
+        font-size: 26px;
+    }
+
+    .texto p {
+        font-size: 16px;
+    }
+
+    .subTitulo-textBox{
+        font-size: 29px;
+    }
+
+    .descricao-textBox{
+        font-size: 15px;
+    }
+        
+    .direitos{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .texto { /*deixei dessa largura para dividir em 3 linhas*/
+        width: 350px;
+    }
+
+    .card {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 515px) {
+    /*todas fontes foram diminuidas em 17% (x 0,83)*/
+    .cabecalho {
+        font-size: 15px;
+    }
+    
+    .titulo {
+        font-size: 20px;
+    }
+
+    .mainBox {
+        height: 420px;
+        padding-left: 20px;
+    }
+
+    .subTitulo {
+        font-size: 23px;
+    }
+
+    .texto p {
+        font-size: 15px;
+    }
+
+    .subTitulo-textBox{
+        font-size: 26px;
+    }
+
+    .descricao-textBox{
+        font-size: 13px;
+    }
+
+    .direitos{
+        font-size: 15px;
+    }
+
+}
