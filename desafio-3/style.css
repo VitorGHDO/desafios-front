@@ -8,7 +8,7 @@
 }
 
 :root {
-    --background-Cabecalho-Header: #D7D4FF;
+    --background-Cabecalho-Rodape: #D7D4FF;
     --background-Main: #f9f9f9;
 
     --font-Titulo: 'Merriweather', sans-serif;
@@ -20,7 +20,7 @@
 }
 
 .cabecalho {
-    background-color: var(--background-Cabecalho-Header);
+    background-color: var(--background-Cabecalho-Rodape);
     display:flex;
     justify-content: space-between;
 }
@@ -52,20 +52,22 @@
     margin-bottom: 40px;
 }
 
-.botao {
+#botao {
     font-family: var(--font-Descricao-Botao);
     color: var(--cor-Font-Branca);
     font-weight: 700;
     font-size: 17px;
-
-    width: 155px;
-    height: 50px;
-    border-radius: 7%;
+    border-radius: 4%;
     border: none;
     background: #6C63FF;
     cursor: pointer;
     box-shadow: 2px 4px 1px #c7c5ec;
     transition: transform 200ms ease-in-out;
+}
+
+.botao-cabecalho{
+    width: 155px;
+    height: 50px;
 }
 
 .botao:hover {
@@ -170,7 +172,68 @@
     border-radius: 2%;
 }
 
+footer{
+    background-color: var(--background-Cabecalho-Rodape);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
 
+.rodape-titulo{
+    font-family: var(--font-Titulo);
+    color: var(--cor-Font-Titulo);
+    font-weight: 400;
+    font-size: 32px;
+
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+.campo{
+    padding-bottom: 10px;
+}
+
+.campo input, textarea{
+    width: 400px;
+    height: 50px;
+    border-radius: 2%;
+    border-style: none;
+    outline: none;
+}
+
+textarea {
+	height: 300px;
+	resize: none;
+    padding-top: 14px;
+    color: black;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: var(--font-Descricao-Botao);
+    font-weight: 400;
+    font-size: 15px;
+    color: rgba(110, 114, 117, 0.74);
+}
+
+.botao-rodape{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+
+    height: 50px;
+    width: 400px;
+}
+
+input:focus, textarea:focus {
+    background-color: #e5e4f5;
+}
+
+input[type=text], [type=email],[type=tel], textarea[type=text]{
+	padding-left: 16px;
+    padding-right: 16px;
+    color: black;
+}
 
 @media (max-width: 1100px) {
     .cabecalho-esquerda{
@@ -201,6 +264,9 @@
     .cartoes{
         padding: 50px 0px 100px 0px; 
     }
+
+    .rodape-titulo{
+        padding-top: 7%;
+        padding-bottom: 4%;
+    }
 }
-
-

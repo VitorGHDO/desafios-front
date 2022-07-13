@@ -11,7 +11,7 @@
         <div class="cabecalho-esquerda">
             <h1 class="titulo">Lorem impsum dolor sit amet</h1>
             <div class="descricao">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu massa sit amet augue consectetur ullamcorper non ac massa.</div>
-            <button class="botao">Botão</button>
+            <button id="botao" class="botao-cabecalho">Botão</button>
         </div>
         <img class="imagem" src="img/imagem.svg">
     </header>
@@ -54,6 +54,30 @@
             </div>
         </div>
     </main>
+
+    <footer class="rodape">
+        <h3 class="rodape-titulo">Entre em contato</h3>
+        
+
+        <form class="formulario">
+            <div class="campo">
+                <input type="text" id="nome" placeholder="Nome" required>
+                
+            </div>
+            <div class="campo">
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="campo">
+                <input type="tel" id="telefone" placeholder="Telefone" required>
+            </div>
+            <div class="campo-mensagem">
+                <textarea type="text" placeholder="Mensagem..." id="mensagem" required></textarea>
+            </div>
+
+            <button class="botao-rodape" id="botao">Enviar mensagem</button>
+        </form>
+
+    </footer>
     
 </body>
 </html>
